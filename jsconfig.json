@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": { // Esto es similar a los alias en webpack
+      "@pages": [
+        "pages/",
+      ]
+    }
+  }
+}

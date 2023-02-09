@@ -1,0 +1,3 @@
+# Aqui ignoraremos los modulos porque su revision no depende de nosotros
+
+node_modules
