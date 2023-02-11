@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import '@styles/Header.scss';
+import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
 import MyOrder from '@containers/MyOrder';
 import menu from '@icons/icon_menu.svg';
@@ -19,11 +19,11 @@ const Header = () => {
   };
 
   return (
-    <nav>
-      <img src={menu} alt="menu" className={styles.Nav} />
+    <nav className={styles.Nav}>
+      <Image src={menu} alt="menu" className={styles.menu} />
 
-      <div className="navbar-left">
-        <img src={logo} alt="logo" className="nav-logo" />
+      <div className={styles['navbar-left']}>
+        <Image src={logo} alt="logo" className={styles['nav-logo']} />
 
         <ul>
           <li>
@@ -47,17 +47,17 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className="navbar-right">
+      <div className={styles['navbar-right']}>
         <ul>
-          <li className="navbar-email" onClick={handleToggle}>
+          <li className={styles['navbar-email']} onClick={handleToggle}>
             platzi@example.com
           </li>
           <li
-            className="navbar-shopping-cart"
+            className={styles['navbar-shopping-cart']}
             // onClick={() => setToggleOrders(!toggleOrders)}
             onClick={changeToggle}
           >
-            <img src={shopping} alt="shopping cart" />
+            <Image src={shopping} alt={styles['shopping cart']} />
             {(state.cart.length || null) && <div>{state.cart.length}</div>}
           </li>
         </ul>
