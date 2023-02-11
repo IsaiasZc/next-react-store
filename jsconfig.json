@@ -2,9 +2,34 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": { // Esto es similar a los alias en webpack
-      "@pages": [
-        "pages/",
-      ]
+      "@pages/*": [
+        "pages/*",
+      ],
+      "@components/*": [
+        "components/*",
+      ],
+      "@containers/*": [
+        "containers/*",
+      ],
+      "@styles/*": [
+        "styles/*",
+      ],
+      "@icons/*": [
+        "assets/icons/*",
+      ],
+      "@logos/*": [
+        "assets/logos/*",
+      ],
+      "@context/*": [
+        "context/*",
+      ],
+      "@hooks/*": [
+        "hooks/*",
+      ],
+      
+
+
     }
   }
 }
+

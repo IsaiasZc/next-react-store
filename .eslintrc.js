@@ -15,5 +15,6 @@ module.exports = {
   ],
   rules: { // Reglas que se deben respetar en mi proyecto
     'semi': ['error', 'always'],
-  }
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+  },
 }
