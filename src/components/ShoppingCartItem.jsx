@@ -1,16 +1,16 @@
-import React from 'react'
-import '@styles/ShoppingCartItem.scss'
+import React from 'react';
+import '@styles/ShoppingCartItem.scss';
 
 const ShoppingCartItem = () => {
   return (
-    <div className='ShoppingCartItem'>
+    <div className="ShoppingCartItem">
       <figure>
         <Bike />
-        </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
+      </figure>
+      <p>Bike</p>
+      <p>$30,00</p>
     </div>
-  )
-}
+  );
+};
 
-export default ShoppingCartItem
+export default ShoppingCartItem;

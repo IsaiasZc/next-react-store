@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['api.lorem.space', 'placeimg.com', 'wixmp.com', 'romapy'],
+    domains: ['api.lorem.space', 'placeimg.com', 'wixmp.com', 'romapy', 'cnnespanol.cnn.com', 'cdn.shopify.com'],
   },
   // env: {
   //   customKey: 'customValue', // me sirve para cuando quiera tener produccion en la nube, pueda tener disponible estas variablaes
