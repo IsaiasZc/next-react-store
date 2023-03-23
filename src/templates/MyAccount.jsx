@@ -9,17 +9,17 @@ const MyAccount = () => {
 
         <form action="/" class="form">
           <div>
-            <label for="name" class="label">
+            <label htmlFor="name" class="label">
               Name
             </label>
             <p class="value">Camila Yokoo</p>
 
-            <label for="email" class="label">
+            <label htmlFor="email" class="label">
               Email
             </label>
             <p class="value">camilayokoo@gmail.com</p>
 
-            <label for="password" class="label">
+            <label htmlFor="password" class="label">
               Password
             </label>
             <p class="value">*********</p>

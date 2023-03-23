@@ -3,6 +3,7 @@
 .Nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 24px;
   border-bottom: 1px solid $--very-light-pink;
   position: sticky;
@@ -58,6 +59,7 @@
 }
 .navbar-shopping-cart {
   position: relative;
+  cursor: pointer;
 }
 .navbar-shopping-cart div {
   width: 16px;
@@ -74,6 +76,10 @@
   align-items: center;
 }
 @media (max-width: 640px) {
+
+  .menu {
+    display: block;
+  }  
 
   .navbar-left ul {
     display: none;

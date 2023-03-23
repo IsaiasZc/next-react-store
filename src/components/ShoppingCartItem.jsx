@@ -5,7 +5,7 @@ const ShoppingCartItem = () => {
   return (
     <div className="ShoppingCartItem">
       <figure>
-        <Bike />
+        {/* <Bike /> */}
       </figure>
       <p>Bike</p>
       <p>$30,00</p>

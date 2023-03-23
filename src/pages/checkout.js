@@ -1,10 +1,14 @@
 import React from 'react';
 import OrderItem from '@components/OrderItem';
 import styles from '@styles/CheckOut.module.scss';
+import Head from 'next/head';
 
 const CheckOut = () => {
   return (
     <div class={styles.CheckOut}>
+      <Head>
+        <title>YardSale | Checkout</title>
+      </Head>
       <div class={styles['CheckOut-container']}>
         <h1 class={styles.title}>My order</h1>
 
