@@ -1,21 +1,35 @@
-module.exports = {
+// const withPWA = require('next-pwa');
+// const runtimeCaching = require('next-pwa/cache');
+
+// module.exports = withPWA({
+//   dest: 'public',
+//   register: true,
+//   // mode: 'production',
+//   swcMinify: true,
+//   disable: false,
+//   reactStrictMode: true,
+//   runtimeCaching,
+//   images: {
+//     domains: ['api.lorem.space', 'placeimg.com', 'wixmp.com', 'romapy', 'cnnespanol.cnn.com', 'cdn.shopify.com', 'unsplash.com'],
+//   },
+// });
+
+const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
   images: {
-    domains: ['api.lorem.space', 'placeimg.com', 'wixmp.com', 'romapy', 'cnnespanol.cnn.com', 'cdn.shopify.com', 'unsplash.com'],
+    domains: ['api.lorem.space', 'placeimg.com', 'wixmp.com', 'romapy', 'cnnespanol.cnn.com', 'cdn.shopify.com', 'unsplash.com', 'robohash.org','static.nike.com'],
   },
-  // env: {
-  //   customKey: 'customValue', // me sirve para cuando quiera tener produccion en la nube, pueda tener disponible estas variablaes
-  // },
-  // // basePath: '/dist',
-  // compress: true, // usará protoco Gzip y preparar nuestro sitio en caso de true.
-  // async redirects() {
-  //   // Aqui guardamos las redirecciones de nuestro sitio.
-  //   return [
-  //     {
-  //       source: '/hola',
-  //       destination: 'https://gndx.dev', // puede ser interna o URL externa
-  //       permanent: true,
-  //     },
-  //   ];
-  // },
 };
+
+const runtimeCaching = require('next-pwa/cache');
+
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  include: ['production'],
+  disable: false,
+  runtimeCaching,
+  register: true,
+});
+
+module.exports = withPWA(nextConfig);

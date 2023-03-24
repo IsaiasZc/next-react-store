@@ -6,6 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head title="ReactShop">
         <meta charSet="utf-8" />
+        <link rel='manifest' href='./manifest.json'/>
       </Head>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-BR5P2007R2" />
       <Script id="google-analytics" strategy="afterInteractive">
