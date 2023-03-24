@@ -18,7 +18,12 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['api.lorem.space', 'placeimg.com', 'wixmp.com', 'romapy', 'cnnespanol.cnn.com', 'cdn.shopify.com', 'unsplash.com', 'robohash.org','static.nike.com'],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
 };
 
